@@ -17,7 +17,22 @@ Airbyte · Snowflake · dbt · SQL · Python
 
 ## 📂 Repo Structure
 p4-elt-pipeline/
-├─ p4.ipynb # SQL + Python analysis
-├─ report.pdf # Final report with screenshots
-├─ files/ # CSV exports from dbt models
-└─ models/ # dbt transformations (staging + marts)
+├─ p4.ipynb        # SQL + Python analysis
+├─ report.pdf      # Final report with screenshots
+├─ files/          # CSV exports from dbt models
+│  ├─ staging_valid_fx_tickers.csv
+│  ├─ staging_valid_stock_tickers.csv
+│  ├─ staging_valid_stock_info.csv
+│  ├─ staging_valid_fx_info.csv
+│  └─ fact_tab_trading.csv
+└─ models/         # dbt transformations
+   ├─ schema.yml
+   ├─ staging/
+   │  ├─ transform_survey.sql
+   │  ├─ staging_valid_fx_tickers.sql
+   │  ├─ staging_valid_stock_tickers.sql
+   │  ├─ staging_valid_stock_info.sql
+   │  └─ staging_valid_fx_info.sql
+   └─ marts/
+      └─ fact_tab_trading.sql
+
