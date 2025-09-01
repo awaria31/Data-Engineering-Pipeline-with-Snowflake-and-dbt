@@ -21,15 +21,5 @@ Airbyte · Snowflake · dbt · SQL · Python
 │  ├─ staging_valid_stock_info.csv
 │  ├─ staging_valid_fx_info.csv
 │  └─ fact_tab_trading.csv
-└─ models/         # dbt transformations
-   ├─ schema.yml
-   ├─ staging/
-   │  ├─ transform_survey.sql
-   │  ├─ staging_valid_fx_tickers.sql
-   │  ├─ staging_valid_stock_tickers.sql
-   │  ├─ staging_valid_stock_info.sql
-   │  └─ staging_valid_fx_info.sql
-   └─ marts/
-      └─ fact_tab_trading.sql
 ```
 
