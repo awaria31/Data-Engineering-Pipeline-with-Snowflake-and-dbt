@@ -16,7 +16,7 @@ Built an end-to-end ELT pipeline that ingests data with **Airbyte**, loads it in
 Airbyte · Snowflake · dbt · SQL · Python  
 
 ## 📂 Repo Structure
-p4-elt-pipeline/
+```p4-elt-pipeline/
 ├─ p4.ipynb        # SQL + Python analysis
 ├─ report.pdf      # Final report with screenshots
 ├─ files/          # CSV exports from dbt models
@@ -35,4 +35,5 @@ p4-elt-pipeline/
    │  └─ staging_valid_fx_info.sql
    └─ marts/
       └─ fact_tab_trading.sql
+```
 
